@@ -78,6 +78,7 @@ if pick == "5":
 # minecraft-launcher lunar-client unityhub
     os.system("xdg-settings set default-web-browser librewolf.desktop")
     os.system("sudo systemctl enable tor && sudo systemctl start tor")
+    os.system("sudo usermod -aG docker $USER && sudo systemctl enable docker && sudo systemctl start docker")
     os.system("sudo pacman -S virt-manager qemu libvirt ovmf dnsmasq swtpm && sudo systemctl start libvirtd && sudo systemctl enable libvirtd && sudo usermod -aG libvirt $USER")
 
 if pick == "6":
