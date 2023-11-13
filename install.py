@@ -56,7 +56,7 @@ if pick == "3":
 
 if pick == "4":
     os.system("sudo pacman -S mesa lib32-mesa xf86-video-amdgpu amdvlk lib32-amdvlk libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau amd-ucode nvtop xorg-xwayland ttf-font-awesome ttf-dejavu ttf-bitstream-vera lib32-fontconfig ttf-liberation wqy-zenhei pipewire pipewire-alsa pipewire-pulse pipewire-jack bluez bluez-utils blueman ntfs-3g wget cups cups-pdf htop cmus neofetch ncdu ranger yt-dlp ffmpeg gnupg exfat-utils intel-ucode android-tools man ufw iptables sane sane-airscan ipp-usb testdisk neovim nerd-fonts gpa linux-headers")
-    os.system("yay -S ani-cli memtest86-efi ix")
+    os.system("yay -S ani-cli memtest86-efi ix python-spotdl")
     os.system("sudo pacman -S xdg-user-dirs && xdg-user-dirs-update")
     os.system('echo "-o ~/Downloads/%(title)s.%(ext)s" > ~/yt-dlp.conf')
     os.system("cp config/.alacritty.yml ~/.alacritty.yml")
