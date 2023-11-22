@@ -15,7 +15,7 @@ What do you want to do?
 pick = input("Pick from 1 to 7: ")
 
 if pick == "1":
-    os.system("reflector --country Australia --age 6 --protocol https --sort rate --save /etc/pacman.d/mirrorlist")
+    os.system("reflector --country country --age 6 --protocol https --sort rate --save /etc/pacman.d/mirrorlist")
     os.system("pacstrap -K /mnt base linux linux-firmware grub efibootmgr os-prober neovim sudo networkmanager python3")
     os.system("genfstab -U /mnt >> /mnt/etc/fstab") 
 
