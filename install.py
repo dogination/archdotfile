@@ -55,7 +55,11 @@ if pick == "3":
     os.system("sudo pacman -S --needed git base-devel && cd /opt && sudo git clone https://aur.archlinux.org/yay.git && sudo chown -R $USER:users ./yay && cd yay && makepkg -si")
 
 if pick == "4":
-    os.system("sudo pacman -S mesa lib32-mesa xf86-video-amdgpu amdvlk lib32-amdvlk libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau amd-ucode nvtop xorg-xwayland ttf-font-awesome ttf-dejavu ttf-bitstream-vera lib32-fontconfig ttf-liberation wqy-zenhei pipewire pipewire-alsa pipewire-pulse pipewire-jack bluez bluez-utils blueman ntfs-3g wget cups cups-pdf htop cmus neofetch ncdu ranger yt-dlp ffmpeg gnupg exfat-utils intel-ucode android-tools man ufw iptables sane sane-airscan ipp-usb testdisk neovim nerd-fonts gpa linux-headers")
+    os.system("sudo pacman -S xorg-xwayland ttf-font-awesome ttf-dejavu ttf-bitstream-vera lib32-fontconfig ttf-liberation wqy-zenhei pipewire pipewire-alsa pipewire-pulse pipewire-jack bluez bluez-utils blueman ntfs-3g wget cups cups-pdf nvtop htop cmus neofetch ncdu ranger yt-dlp ffmpeg gnupg exfat-utils intel-ucode android-tools man ufw iptables sane sane-airscan ipp-usb testdisk neovim nerd-fonts gpa linux-headers")
+    os.system("steam lutris gamemode lib32-gamemode mesa lib32-mesa xf86-video-amdgpu amdvlk lib32-amdvlk libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau amd-ucode")
+    os.system("sudo pacman -S --needed lib32-mesa vulkan-radeon lib32-vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader")
+    os.system("sudo pacman -S --needed lib32-mesa vulkan-intel lib32-vulkan-intel vulkan-icd-loader lib32-vulkan-icd-loader")
+    os.system("sudo pacman -S --needed wine-staging giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap gnutls lib32-gnutls mpg123 lib32-mpg123 openal lib32-openal v4l-utils lib32-v4l-utils libpulse lib32-libpulse libgpg-error lib32-libgpg-error alsa-plugins lib32-alsa-plugins alsa-lib lib32-alsa-lib libjpeg-turbo lib32-libjpeg-turbo sqlite lib32-sqlite libxcomposite lib32-libxcomposite libxinerama lib32-libgcrypt libgcrypt lib32-libxinerama ncurses lib32-ncurses ocl-icd lib32-ocl-icd libxslt lib32-libxslt libva lib32-libva gtk3 lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader lib32-vulkan-icd-loader")
     os.system("yay -S ani-cli memtest86-efi ix python-spotdl")
     os.system("sudo pacman -S xdg-user-dirs && xdg-user-dirs-update")
     os.system('echo "-o ~/Downloads/%(title)s.%(ext)s" > ~/yt-dlp.conf')
@@ -72,7 +76,7 @@ if pick == "4":
 
 if pick == "5":
     os.system("sudo pacman -S alacritty firefox krusader kompare unace krename lhasa unarj unrar unzip xz zip arj p7zip kde-cli-tools nemo docker libreoffice audacity handbrake blender gimp mpv obs-studio krita gwenview torbrowser-launcher transmission-gtk keepassxc ark inkscape okular kdenlive darktable kdiskmark pavucontrol veracrypt system-config-printer net-tools wine perl-image-exiftool vlc nmap whois thunderbird ghex tor proxychains metadata-cleaner bleachbit gnome-disk-utility")
-# arduino lmms peazip/p7zip-gui steam lutris gamemode lib32-gamemode onionshare ventoy-bin rpi-imager universal-android-debloater linux-wifi-hotspot kdeconnect mpv-webm ardour lmms trimage simple-scan skanlite spectacle gnome-maps
+# arduino lmms peazip/p7zip-gui onionshare ventoy-bin rpi-imager universal-android-debloater linux-wifi-hotspot kdeconnect mpv-webm ardour lmms trimage simple-scan skanlite spectacle gnome-maps
     os.system("sudo pacman -S flatpak && flatpak install com.discordapp.Discord && yay -S flatseal")
     os.system("yay -S rar blobsaver librewolf-bin freetube-git")
 # minecraft-launcher lunar-client unityhub
