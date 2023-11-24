@@ -3,7 +3,7 @@
     "position": "top",
     "height": 30,
 
-    "modules-left": ["wlr/workspaces", "hyprland/window"],
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
      "modules-right": ["tray", "custom/spotify", "custom/weather", "temperature", "cpu", "memory", "custom/mail", "custom/storage", "backlight", "pulseaudio", "network", "idle_inhibitor", "battery", "clock"],
     "wlr/workspaces": {
         "on-click": "activate",
@@ -51,8 +51,8 @@
       "on-click": "blueman-manager"
     },
     "pulseaudio": {
-        "format": "{icon}",
-        "format-alt": "{volume} {icon}",
+        "format": "{icon} {volume}",
+        "format-alt": "{icon} {volume}",
         "format-alt-click": "click-right",
         "format-muted": "",
         "format-icons": {
