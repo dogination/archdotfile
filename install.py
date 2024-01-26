@@ -105,3 +105,4 @@ if pick == "6":
 # add screenshot shortcut obs-studio
 # add printer
 # config proxychains
+# config darktable
