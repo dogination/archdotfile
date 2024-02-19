@@ -4,7 +4,7 @@
     "height": 30,
 
     "modules-left": ["hyprland/workspaces", "hyprland/window"],
-     "modules-right": ["tray", "custom/spotify", "custom/weather", "temperature", "cpu", "memory", "custom/mail", "custom/storage", "backlight", "pulseaudio", "network", "idle_inhibitor", "battery", "clock"],
+     "modules-right": ["tray", "custom/cavainternal", "custom/spotify", "custom/weather", "temperature", "cpu", "memory", "custom/mail", "custom/storage", "backlight", "pulseaudio", "network", "idle_inhibitor", "battery", "clock"],
     "wlr/workspaces": {
         "on-click": "activate",
         "format": "{name}",
@@ -120,11 +120,21 @@
         "tooltip": false
     },
     "custom/weather": {
-         "format": "{}",
-         "tooltip": true, 
-         "interval": 3600,
-         "exec": "~/.config/waybar/modules/waybar-wttr.py",
-         "return-type": "json"
+        "format": "{}",
+        "tooltip": true, 
+        "interval": 3600,
+        "exec": "~/.config/waybar/modules/waybar-wttr.py",
+        "return-type": "json"
+    },
+    "custom/cavainternal": {
+        "exec": "sh ~/.config/waybar/modules/Cava.sh",
+        "format": "{}",
+        "tooltip": true,
+        "layer": "below",
+        "output": "all",
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous",
+        "on-click": "playerctl play-pause"
     },
     "custom/test": {
         "format": "{}",
