@@ -81,7 +81,7 @@ if pick == "5":
     os.system("krusader kompare unace krename lhasa unarj unrar unzip xz zip arj p7zip kde-cli-tools && yay -S rar")
 # arduino lmms peazip/p7zip-gui onionshare ventoy-bin rpi-imager universal-android-debloater linux-wifi-hotspot kdeconnect mpv-webm ardour lmms trimage simple-scan skanlite spectacle gnome-maps
     os.system("sudo pacman -S flatpak && flatpak install com.discordapp.Discord && yay -S flatseal")
-    os.system("yay -S blobsaver librewolf-bin freetube-git cava whatweb sublist3r dirble phoneinfoga")
+    os.system("yay -S blobsaver librewolf-bin freetube-git cava whatweb sublist3r dirble phoneinfoga sherlock-git")
 # minecraft-launcher lunar-client unityhub
     os.system("xdg-settings set default-web-browser librewolf.desktop")
     os.system("wal -i ~/Documents/Backgrounds/wallhaven-3lz78d.jpg")
