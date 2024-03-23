@@ -77,7 +77,7 @@ if pick == "4":
     os.system("chsh -s /bin/bash user")
 
 if pick == "5":
-    os.system("sudo pacman -S alacritty firefox nemo docker libreoffice audacity handbrake blender gimp mpv obs-studio krita gwenview torbrowser-launcher transmission-gtk keepassxc ark inkscape okular kdenlive darktable kdiskmark pavucontrol veracrypt system-config-printer net-tools wine perl-image-exiftool vlc nmap whois thunderbird ghex tor proxychains metadata-cleaner bleachbit gnome-disk-utility python-pywal gthumb traceroute")
+    os.system("sudo pacman -S alacritty firefox nemo docker libreoffice audacity handbrake blender gimp mpv obs-studio krita gwenview torbrowser-launcher transmission-gtk keepassxc ark inkscape okular kdenlive darktable kdiskmark pavucontrol veracrypt system-config-printer net-tools wine perl-image-exiftool vlc nmap whois thunderbird ghex tor proxychains metadata-cleaner bleachbit gnome-disk-utility python-pywal gthumb traceroute nautilus")
     os.system("krusader kompare unace krename lhasa unarj unrar unzip xz zip arj p7zip kde-cli-tools && yay -S rar")
 # arduino lmms peazip/p7zip-gui onionshare ventoy-bin rpi-imager universal-android-debloater linux-wifi-hotspot kdeconnect mpv-webm ardour lmms trimage simple-scan skanlite spectacle gnome-maps
     os.system("sudo pacman -S flatpak && flatpak install com.discordapp.Discord && yay -S flatseal")
