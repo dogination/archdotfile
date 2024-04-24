@@ -58,7 +58,7 @@ if pick == "3":
 
 if pick == "4":
     os.system("sudo pacman -S xorg-xwayland ttf-font-awesome ttf-dejavu ttf-bitstream-vera lib32-fontconfig ttf-liberation wqy-zenhei pipewire pipewire-alsa pipewire-pulse pipewire-jack bluez bluez-utils blueman ntfs-3g wget cups cups-pdf nvtop htop cmus neofetch ncdu ranger yt-dlp ffmpeg gnupg exfat-utils intel-ucode android-tools man ufw iptables sane sane-airscan ipp-usb testdisk neovim nerd-fonts gpa linux-headers")
-    os.system("steam lutris gamemode lib32-gamemode mesa lib32-mesa xf86-video-amdgpu amdvlk lib32-amdvlk libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau amd-ucode")
+    os.system("sudo pacman -S steam lutris gamemode lib32-gamemode mesa lib32-mesa xf86-video-amdgpu amdvlk lib32-amdvlk libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau amd-ucode")
     os.system("sudo pacman -S --needed lib32-mesa vulkan-radeon lib32-vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader")
     os.system("sudo pacman -S --needed lib32-mesa vulkan-intel lib32-vulkan-intel vulkan-icd-loader lib32-vulkan-icd-loader")
     os.system("sudo pacman -S --needed wine-staging giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap gnutls lib32-gnutls mpg123 lib32-mpg123 openal lib32-openal v4l-utils lib32-v4l-utils libpulse lib32-libpulse libgpg-error lib32-libgpg-error alsa-plugins lib32-alsa-plugins alsa-lib lib32-alsa-lib libjpeg-turbo lib32-libjpeg-turbo sqlite lib32-sqlite libxcomposite lib32-libxcomposite libxinerama lib32-libgcrypt libgcrypt lib32-libxinerama ncurses lib32-ncurses ocl-icd lib32-ocl-icd libxslt lib32-libxslt libva lib32-libva gtk3 lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader lib32-vulkan-icd-loader")
@@ -84,7 +84,6 @@ if pick == "5":
     os.system("yay -S blobsaver librewolf-bin bottles freetube-git localsend-bin gtk-hash cava whatweb sublist3r dirble phoneinfoga sherlock-git")
 # minecraft-launcher lunar-client unityhub
     os.system("xdg-settings set default-web-browser librewolf.desktop")
-    os.system("wal -i ~/Documents/Backgrounds/wallhaven-3lz78d.jpg")
     os.system("sudo systemctl enable tor && sudo systemctl start tor")
     os.system("sudo usermod -aG docker $USER && sudo systemctl enable docker && sudo systemctl start docker")
     os.system("sudo pacman -S virt-manager qemu libvirt ovmf dnsmasq swtpm && sudo systemctl start libvirtd && sudo systemctl enable libvirtd && sudo usermod -aG libvirt $USER")
@@ -94,6 +93,7 @@ if pick == "6":
     os.system("yay -S rofi-power-menu ttf-symbola rofi-bluetooth-git rofi-lbonn-wayland-git")
     os.system("sudo systemctl enable seatd && sudo systemctl start seatd && sudo usermod -aG seat $USER")
     os.system("wget -P ~/Documents/Backgrounds https://w.wallhaven.cc/full/3l/wallhaven-3lz78d.jpg")
+    os.system("wal -i ~/Documents/Backgrounds/wallhaven-3lz78d.jpg")
     os.system("cp -r config/hypr/ ~/.config/ && cp -r config/waybar/ ~/.config/")
     os.system("cp -r config/cava/ ~/.config/")
 
