@@ -24,4 +24,6 @@ if [[ -r /usr/share/bash-completion/bash_completion ]]; then
 fi
 PS1='\[\033[1;36m\]\u\[\033[1;31m\]@\[\033[1;32m\]\h:\[\033[1;35m\]\w\[\033[1;31m\]\$\[\033[0m\] '
 alias vi="nvim"
+export EDITOR=nvim
 cat ~/.cache/wal/sequences &
+PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
