@@ -95,7 +95,7 @@ if pick == "6":
     os.system("wget -P ~/Documents/Backgrounds https://w.wallhaven.cc/full/3l/wallhaven-3lz78d.jpg")
     os.system("wal -i ~/Documents/Backgrounds/wallhaven-3lz78d.jpg")
     os.system("cp -r config/hypr/ ~/.config/ && cp -r config/waybar/ ~/.config/")
-    os.system("cp -r config/cava/ ~/.config/")
+    os.system("cp -r config/cava/ ~/.config/cava/")
 
 ## post installation
 # download tor browser
