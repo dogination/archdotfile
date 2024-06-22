@@ -89,8 +89,8 @@ if pick == "5":
     os.system("sudo pacman -S virt-manager qemu libvirt ovmf dnsmasq swtpm && sudo systemctl start libvirtd && sudo systemctl enable libvirtd && sudo usermod -aG libvirt $USER")
 
 if pick == "6":
-    os.system("sudo pacman -S hyprland seatd waybar rofi-emoji hyprland swaylock cliphist otf-font-awesome polkit-kde-agent dunst swaybg xdg-desktop-portal-hyprland udiskie noto-fonts-cjk noto-fonts-emoji swayidle pavucontrol")
-    os.system("yay -S rofi-power-menu ttf-symbola rofi-bluetooth-git rofi-lbonn-wayland-git")
+    os.system("sudo pacman -S hyprland seatd waybar rofimoji hyprland swaylock cliphist otf-font-awesome polkit-kde-agent dunst swaybg xdg-desktop-portal-hyprland udiskie noto-fonts-cjk noto-fonts-emoji swayidle pavucontrol")
+    os.system("yay -S rofi-power-menu ttf-symbola rofi-bluetooth-git rofi-lbonn-wayland-git hyprshot")
     os.system("sudo systemctl enable seatd && sudo systemctl start seatd && sudo usermod -aG seat $USER")
     os.system("wget -P ~/Documents/Backgrounds https://w.wallhaven.cc/full/3l/wallhaven-3lz78d.jpg")
     os.system("wal -i ~/Documents/Backgrounds/wallhaven-3lz78d.jpg")
