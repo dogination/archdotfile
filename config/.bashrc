@@ -26,4 +26,9 @@ PS1='\[\033[1;36m\]\u\[\033[1;31m\]@\[\033[1;32m\]\h:\[\033[1;35m\]\w\[\033[1;31
 alias vi="nvim"
 export EDITOR=nvim
 cat ~/.cache/wal/sequences &
-PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+#PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+
+# Created by `pipx` on 2024-06-29 06:20:11
+export PATH="$PATH:/home/user/.local/bin"
+
+alias dns="curl -s https://raw.githubusercontent.com/macvk/dnsleaktest/master/dnsleaktest.sh | bash"
