@@ -136,12 +136,6 @@
         "on-scroll-down": "playerctl previous",
         "on-click": "playerctl play-pause"
     },
-    "custom/test": {
-        "format": "{}",
-        "exec": "/tmp/test blub",
-        "param": "blah",
-        "interval": 5
-    },
     "tray": {
         "icon-size": 18
     }
