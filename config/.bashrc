@@ -1,4 +1,4 @@
-#
+﻿#
 # /etc/bash.bashrc
 #
 
@@ -32,3 +32,5 @@ cat ~/.cache/wal/sequences &
 export PATH="$PATH:/home/user/.local/bin"
 
 alias dns="curl -s https://raw.githubusercontent.com/macvk/dnsleaktest/master/dnsleaktest.sh | bash"
+
+export MANPAGER='nvim +Man!'
